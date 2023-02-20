@@ -5,7 +5,7 @@
     
 <mapper namespace="com.example.review.dao.ReviewDao">
 
-	<select id="list" parameterType="PageDto" resultType="ReviewDto">
+	<select id="list" parameterType="ReviewPageDto" resultType="ReviewDto">
 	<![CDATA[
 		select b.* from
 		(select rownum
